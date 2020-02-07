@@ -8,6 +8,8 @@ public class TestNGDay4 {
 	public void webLoginHomeLoan()
 	{
 		System.out.println("WebLoginHome");
+		System.out.println("WebLoginHouse");
+		System.out.println("WebLoginVilla");
 	}
 	
 	@Test
