@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Loan Department">
+
+<listeners>
+<listener class-name="TestNGPractice.Listeners"/>
+</listeners>
+  <test name="PersonalLoan">
+  <parameter name="URL" value="qaclickAcademy.com"/>
+  <parameter name="APIKey/User" value="123243"/>
+    <classes>
+      <class name="TestNGPractice.TestNGDay1">
+      <methods>
+      <include name="firstTest"></include>
+      </methods>
+      </class>
+      
+      <class name = "TestNGPractice.TestNGDay2"/>
+      <class name = "TestNGPractice.TestNGDay4"/>
+    </classes>
+  </test> 
+  
+  <test name="CarLoan">
+  <classes>
+  <class name = "TestNGPractice.TestNGDay3"> 
+  <methods>
+  <exclude name = "mobile.*"></exclude>
+  </methods>
+  </class>
+  </classes>
+  
+  </test>
+  
+</suite> 
